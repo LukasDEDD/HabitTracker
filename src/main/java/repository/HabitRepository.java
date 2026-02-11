@@ -1,6 +1,6 @@
-package main.repository;
+package repository;
 
-import main.model.Habit;
+import model.Habit;
 import java.util.List;
 
 public interface HabitRepository {
