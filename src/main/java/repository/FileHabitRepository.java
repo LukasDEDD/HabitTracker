@@ -12,8 +12,16 @@ import java.util.List;
 
 public class FileHabitRepository implements HabitRepository {
 
-    private static final String FILE_PATH = "data/habits.json";
+    private String FILE_PATH = "data/habits.json";
     private final Gson gson = new Gson();
+
+    public FileHabitRepository(String filePath) {
+        this.FILE_PATH = filePath;
+    }
+
+    public FileHabitRepository() {
+        this("data/habits.json");
+    }
 
     @Override
     public List<Habit> findAll() {

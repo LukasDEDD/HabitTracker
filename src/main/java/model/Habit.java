@@ -12,7 +12,7 @@ public class Habit {
     private String description;
     private LocalDate createdDate;
 
-    private List<HabitRecord> records = new ArrayList<>();
+    public List<HabitRecord> records = new ArrayList<>();
 
     public Habit(long id, String name, String description, LocalDate createdDate) {
         this.id = id;
